@@ -1,4 +1,4 @@
-package fr.eni.javaee.gestioncourses.servlets;
+package fr.eni.javaee.gestioncourses;
 
 import javax.naming.Context;
 import javax.naming.InitialContext;
@@ -14,8 +14,8 @@ import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.SQLException;
 
-@WebServlet("ServletTestPoolConnexion")
-public class ServletTestPoolConnexion extends HttpServlet {
+@WebServlet("/ServletTestPoolConnection")
+public class ServletTestPoolConnection extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         doGet(request, response);
     }
@@ -39,6 +39,5 @@ public class ServletTestPoolConnexion extends HttpServlet {
             response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
             out.println("Une erreur est survenue lors de l'utilisation de la base de données : " + e.getMessage());
         }
-
     }
 }

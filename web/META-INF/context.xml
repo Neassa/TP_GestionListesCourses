@@ -6,7 +6,7 @@
         driverClassName = "com.microsoft.sqlserver.jdbc.SQLServerDriver"
         type = "javax.sql.DataSource"
 
-        url="jdbc:sqlserver://LAPTOP-N49RLD68:1433;databasename=BDD-SHOPPING_LISTS"
+        url="jdbc:sqlserver://LAPTOP-N49RLD68:1433;databasename=BDD_SHOPPING_LISTS"
         username="utilisateurBDD"
         password="Pa$$w0rd"
 
