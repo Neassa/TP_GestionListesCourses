@@ -6,5 +6,21 @@
            version="4.0">
 
 
+    <display-name>GestionCourses</display-name>
+    <welcome-file-list>
+        <welcome-file>lists</welcome-file>
+    </welcome-file-list>
+
+    <!-- JSP -->
+    <servlet>
+        <servlet-name>Shopping_lists</servlet-name>
+        <jsp-file>/WEB-INF/shopping_lists.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Shopping_lists</servlet-name>
+        <url-pattern>/lists</url-pattern>
+    </servlet-mapping>
+
+
 
 </web-app>
