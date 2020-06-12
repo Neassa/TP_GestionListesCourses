@@ -15,6 +15,11 @@ public class ShoppingList implements Serializable {
         this.items = items;
     }
 
+    public ShoppingList(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
     public ShoppingList() {
     }
 
